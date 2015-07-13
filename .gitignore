@@ -1,1 +1,13 @@
+# OSX specific ignores
 .DS_Store
+
+# Eclipse specific ignores
+.metadata/
+.recommenders/
+.classpath
+.project
+.settings/
+
+# Java specific ignores
+.class
+.jar
