@@ -4,46 +4,63 @@
 package drone;
 
 import lejos.robotics.RegulatedMotor;
-import lejos.utility.PilotProps;
-//import lejos.robotics.RegulatedMotor;
+import lejos.robotics.navigation.DifferentialPilot;
 
 /**
  * @author Jason Yao
  *
  */
-public class Baymax
+public class Baymax extends DifferentialPilot
 {
-	// Independently controlled motors
-	static RegulatedMotor leftMotor;
-	static RegulatedMotor rightMotor;
+	/**
+	 * @param wheelDiameter
+	 * @param trackWidth
+	 * @param leftMotor
+	 * @param rightMotor
+	 */
+	public Baymax(double wheelDiameter, double trackWidth,
+			RegulatedMotor leftMotor, RegulatedMotor rightMotor)
+	{
+		super(wheelDiameter, trackWidth, leftMotor, rightMotor);
+	}
 
 	/**
-	 * @param args
+	 * @param wheelDiameter
+	 * @param trackWidth
+	 * @param leftMotor
+	 * @param rightMotor
+	 * @param reverse
 	 */
-	public static void main(String[] args)
+	public Baymax(double wheelDiameter, double trackWidth,
+			RegulatedMotor leftMotor, RegulatedMotor rightMotor, boolean reverse)
 	{
-		try
-		{
-			// Welcome Message
-			introMessage();
-			
-			// Configuration
-			
-			// 
-			// TODO Auto-generated method stub
+		super(wheelDiameter, trackWidth, leftMotor, rightMotor, reverse);
+	}
 
-		}
-		catch (Exception e)
-		{System.err.println("WHAT THE FUCK DID YOU DO WHY IS THIS ON FIRE");}
-		finally
-		{
-			
-		} // End of finally block
-	} // End of the main method
-	
-	private static void introMessage()
+	/**
+	 * @param leftWheelDiameter
+	 * @param rightWheelDiameter
+	 * @param trackWidth
+	 * @param leftMotor
+	 * @param rightMotor
+	 * @param reverse
+	 */
+	public Baymax(double leftWheelDiameter, double rightWheelDiameter,
+			double trackWidth, RegulatedMotor leftMotor,
+			RegulatedMotor rightMotor, boolean reverse)
 	{
+		super(leftWheelDiameter, rightWheelDiameter, trackWidth, leftMotor,
+				rightMotor, reverse);
+	}
+
+	public boolean isAtEnd() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public void move(MapNode currentNode) {
+		// TODO Auto-generated method stub
 		
 	}
 
-} // End of the Baymax Class
+} // End of the Baymax class
