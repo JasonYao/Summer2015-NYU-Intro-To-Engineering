@@ -3,7 +3,9 @@ package drone;
 /**
  * Package Imports
  */
+import java.util.ArrayList;
 import java.util.Stack;
+
 
 /**
  * Lejos Imports
@@ -90,9 +92,9 @@ public class Ow
 			/* END OF MAZE SOLVER*/
 
 			/* START OF ITEM RETRIEVEL */
-
+			
 			/* END OF ITEM RETRIEVEL */
-			//			System.out.println("Glorious Success");
+			System.out.println("Glorious Success");
 
 		}
 		//		catch (BaymaxException e)
@@ -141,8 +143,41 @@ public class Ow
 	 */
 	private static void DFS(Baymax baymax)
 	{
+		// New DFS
 		Stack<MapNode> movementStack = new Stack<MapNode>();
-		MapNode currentNode = new MapNode(0,0); // Initializes the source node to be at (0,0) in a cartesian plane
+		
+		MapNode currentNode = new MapNode(0,0);
+		movementStack.push(currentNode);
+		while (!movementStack.isEmpty() && GLORIOUSSUCCESS == false)
+		{
+			// Sets node if not source node
+			currentNode = movementStack.pop();
+			if (currentNode.getPositionX() == 0 && currentNode.getPositionY() == 0)
+			{
+				
+			}
+			
+			// Goes forward if possible
+			
+			// Otherwise goes left
+			
+			// Otherwise goes right
+			
+			// Otherwise backtracks to the last node
+		}
+		
+		
+		
+			// Sets node
+			// Goes forward if possible
+			// else Goes left
+		
+		
+		
+		// Old DFS
+		ArrayList<Object> memoizedMovement = new ArrayList<Object>();
+		//Stack<MapNode> movementStack = new Stack<MapNode>();
+		//MapNode currentNode = new MapNode(0,0); // Initializes the source node to be at (0,0) in a cartesian plane
 		movementStack.push(currentNode);
 
 		while (!movementStack.isEmpty() && GLORIOUSSUCCESS == false)
