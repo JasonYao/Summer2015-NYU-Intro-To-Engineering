@@ -38,5 +38,7 @@ Built a conditional combination logic circuit that would activate under specific
 
 Building an autonomous drone capable of traversing any foreign maze, and reaching a target while disabling security measures (barcodes).
 
+[Lab Manual](https://manual.eg.poly.edu/index.php/Security_Infiltration_Drone_(SID))
+
 ## License
 This repo is shared in accordance with the license file [here](LICENSE.md)
