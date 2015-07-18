@@ -39,16 +39,9 @@ public class Ow
 	{
 		try
 		{
-			// TODO remove after confirmed working
-			LCD.drawString("Plugin Test", 0, 4);
-			Delay.msDelay(5000);
-
-			//TODO remove after testing
-			System.out.println("Got to checkpoint");
-			System.exit(0);
-
 			// Welcome Message
 			introMessage();
+			System.exit(0);
 
 			/* START OF CONFIGURATIONS */
 			MAZE_MODE = 0;
@@ -92,7 +85,7 @@ public class Ow
 			/* END OF MAZE SOLVER*/
 
 			/* START OF ITEM RETRIEVEL */
-			
+
 			/* END OF ITEM RETRIEVEL */
 			System.out.println("Glorious Success");
 
@@ -100,7 +93,10 @@ public class Ow
 		//		catch (BaymaxException e)
 		//		{System.err.print(e.getMessage());}
 		catch (Exception e)
-		{System.err.println("WHAT THE FUCK DID YOU DO WHY IS THIS ON FIRE");}
+		{
+			System.err.println("WHAT THE FUCK DID YOU DO");
+			System.err.println("WHY IS THIS ON FIRE");
+		}
 	} // End of the main method
 
 
@@ -121,19 +117,18 @@ public class Ow
 		else if (MAZE_MODE == 1)
 		{
 			// Maze is known beforehand, runs Dijkstra for shortest path, and executes
-			dijkstra(baymax);
+			manualMode(baymax);
 		}
 		else
 			throw new BaymaxException("Error: Invalid traversal mode selected");
 	} // End of Balalalalala method
 
 	/**
-	 * 
+	 * Wrapper method for the manual controls for the robot
 	 * @param baymax
 	 */
-	private static void dijkstra(Baymax baymax)
+	private static void manualMode(Baymax baymax)
 	{
-		// TODO Auto-generated method stub
 
 	} // End of Disjkstra's Algorithm method
 
@@ -145,7 +140,7 @@ public class Ow
 	{
 		// New DFS
 		Stack<MapNode> movementStack = new Stack<MapNode>();
-		
+
 		MapNode currentNode = new MapNode(0,0);
 		movementStack.push(currentNode);
 		while (!movementStack.isEmpty() && GLORIOUSSUCCESS == false)
@@ -154,28 +149,28 @@ public class Ow
 			currentNode = movementStack.pop();
 			if (currentNode.getPositionX() == 0 && currentNode.getPositionY() == 0)
 			{
-				
+
 			}
-			
+
 			// Goes forward if possible
-			
+
 			// Otherwise goes left
-			
+
 			// Otherwise goes right
-			
+
 			// Otherwise backtracks to the last node
 		}
-		
-		
-		
-			// Sets node
-			// Goes forward if possible
-			// else Goes left
-		
-		
-		
+
+
+
+		// Sets node
+		// Goes forward if possible
+		// else Goes left
+
+
+
 		// Old DFS
-		ArrayList<Object> memoizedMovement = new ArrayList<Object>();
+		//ArrayList<Object> memoizedMovement = new ArrayList<Object>();
 		//Stack<MapNode> movementStack = new Stack<MapNode>();
 		//MapNode currentNode = new MapNode(0,0); // Initializes the source node to be at (0,0) in a cartesian plane
 		movementStack.push(currentNode);
@@ -288,17 +283,17 @@ public class Ow
 	} // End of the findChildren method
 
 	/**
-	 * [Helper Method] Prints an introductionary message on the screen.
+	 * [Helper Method] Prints an introductory message on the screen.
 	 */
 	private static void introMessage()
 	{
-		GraphicsLCD g = LocalEV3.get().getGraphicsLCD();
-		g.drawString("Hello! I am Baymax,", 5, 0, 0);
-		g.setFont(Font.getSmallFont());
-
-
-		g.drawString("your personal", 2, 20, 0);
-		g.drawString("healthcare companion.", 2, 30, 0);
+		System.out.println("Hello! I am");
+		System.out.println("Baymax, your");
+		Delay.msDelay(3000);
+		System.out.println("personal Security");
+		System.out.println("Infiltration");
+		System.out.println("Drone companion");
+		Delay.msDelay(3000);
 	} // End of the IntroMessage method
 
 	/* START OF TESTING SUITE */
