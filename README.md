@@ -30,7 +30,9 @@ Introduced to LabVIEW, impelemented programs for a simple calculator, a thermal 
 
 ## [Lab 5: Digital Logic](Lab5)
 
-Built a conditional combination logic circuit that would activate under specific conditions, tested with LabVIEW, and built on the NI-ELVIS II+ prototyping board.
+Design & built a conditional combination logic circuit that would activate under specific conditions, tested with LabVIEW, and built on the NI-ELVIS II+ prototyping board. Implemented via digital 
+logic in the form of AND, OR and NOT logic gates.
+
 
 [Lab Manual](https://manual.eg.poly.edu/index.php/Digital_Logic)
 
