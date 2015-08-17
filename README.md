@@ -33,8 +33,31 @@ Introduced to LabVIEW, impelemented programs for a simple calculator, a thermal 
 Design & built a conditional combination logic circuit that would activate under specific conditions, tested with LabVIEW, and built on the NI-ELVIS II+ prototyping board. Implemented via digital 
 logic in the form of AND, OR and NOT logic gates.
 
-
 [Lab Manual](https://manual.eg.poly.edu/index.php/Digital_Logic)
+
+## [Lab 7: Renewable energy Competition](Lab7)
+
+Introduction to renewable energy sources, basic circuitry, and mobile robots via batteries and capacitors.
+
+[Lab Manual](https://manual.eg.poly.edu/index.php/Renewable_Energy_Competition)
+
+## [Lab 8: Lemon Car Competition](Lab8)
+
+Built lemon-powered car from LEGO pieces, via capacitors charged in a Cu/Mg Galvanic cell.
+
+[Lab Manual](https://manual.eg.poly.edu/index.php/Lemon_Car_Competition)
+
+## [Lab 10: Boom Construction Competition](Lab10)
+
+Designed & built a boom to lift and hold a weight (load).
+
+[Lab Manual](https://manual.eg.poly.edu/index.php/Boom_Construction_Competition)
+
+## [Lab 11: Heat Transfer and Thermal Insulation Competition](Lab11)
+
+Designed & built a thermal insulation chamber in order to minimize heat loss inside.
+
+[Lab Manual](https://manual.eg.poly.edu/index.php/Heat_Transfer_and_Thermal_Insulation_Competition)
 
 ## [Semester Long Project: Security Infiltration Drone (SID)](SemesterProject/SecurityInfiltrationDrone)
 
